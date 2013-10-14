@@ -1,0 +1,19 @@
+<hr>
+<h4><%= t('bill') %></h4>
+	<% if bills.any? %>	
+	<% bills.each do |bill| %>
+	<div id='bill_<%=bill.id %>' class="well well-small">
+		<h4><%= bill.name %></h4>
+		<%= bill.description %>
+		<h5><%= l(bill.date, :format => :long) %></h5>
+		<h3><%= bill.value.round(2) %></h3>
+		<%= link_to t('edit'), edit_user_bill_path(bill.user,bill), :class => "btn btn-primary", :remote => true %> 
+		<%= link_to t('delete'), [bill.user, bill], :remote => true, :method => :delete, :class => "btn btn-danger", :confirm => "Deseja excluir" %>
+	</div>
+	<% end %>
+	<% else %>
+	<div class='alert'>
+		<%= t('no_bill_registered_to_this_user') %>
+	</div>
+
+	<% end %>

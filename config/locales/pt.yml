@@ -1,0 +1,16 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+pt:
+  about_us: "Sobre nós"
+  new_user: "Novo Usuário"
+  no_bill_registered_to_this: "Nenhuma conta registrada para esse usuário"
+  new_bill: "Nova Conta"
+  save: "Salvar"
+  saved_successfully: "Salvo com sucesso!"
+  error_while_saving: "Erro enquanto estava salvando"
+  update_successfully: "Atulizado com sucesso!"
+  error_while_updating: "Erro enquanto estava atualizando!"
+  error_while_deleting: "Error enquanto estava deletando!"
+  bill: "Conta"
+  edit: "Editar"

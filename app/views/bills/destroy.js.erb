@@ -1,0 +1,5 @@
+<% if @bill.destroyed? %>
+$("#bill_<%= @bill.id %>").remove();
+<% else %>
+$("#bill_<%= @bill.id %>").prepend("<%= t('error_while_deleting') %>");
+<% end %>

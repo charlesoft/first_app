@@ -1,0 +1,2 @@
+$("#new_bill").html("<%= j(render :partial => 'bills/new', :locals => {:bill => @bill, :user => @bill.user}) %>");
+$('html, body').animate({scrollTop:$("#new_bill").offset().top});
